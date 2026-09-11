@@ -6,6 +6,7 @@ title: Research
 ## Papers and preprints 
 
 <ol reversed>
+    <li> Stable solutions in the abelian Higgs model. <a href="https://arxiv.org/abs/2609.11647" target="_blank"> arXiv.</a></li>
     <li>(with M. del Pino and M. A. M. Guaraco) A two-dimensional Allen-Cahn theory for interfaces with boundary. <a href="https://arxiv.org/abs/2607.29588" target="_blank"> arXiv.</a></li>
     <li>(with G. Cozzi) Uniform small energy regularity for fractional geometric problems. <a href="https://arxiv.org/abs/2605.06128" target="_blank"> arXiv.</a></li>
     <li>(with S. Dipierro and E. Valdinoci) Nonlocal free boundary minimal surfaces. <a href="https://arxiv.org/abs/2508.00337" target="_blank"> arXiv.</a></li>
