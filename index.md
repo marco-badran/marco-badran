@@ -8,7 +8,7 @@ title: Home
     <img src="{{ site.baseurl }}/img.jpg" alt="My Image" title="My Image"
          style="border-radius: 50%; width: auto; height: 200px; object-fit: cover; aspect-ratio: 1 / 1;" />
          <br><br>
-        <p style="text-align: center;"><span style="font-size: 80%;">marco.badran[at]math.ethz.ch</span></p>
+        <p style="text-align: center;"><span style="font-size: 80%;">marco.badran@unibocconi.it</span></p>
   </div>
   <div style="flex: 1; order: 1;">
     <h3>Welcome!</h3>
