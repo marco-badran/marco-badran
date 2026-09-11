@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-<div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">
+<div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; column-gap: 32px;">
   <div style="flex: 0; order: 2;">
     <img src="{{ site.baseurl }}/img.jpg" alt="Portrait of Marco Badran" title="Marco Badran"
          style="border-radius: 14px; width: 240px; height: auto;" />
