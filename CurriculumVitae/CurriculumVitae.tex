@@ -1,55 +1,48 @@
 \documentclass[a4paper,11pt]{article}
 
-% Font and Encoding
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{lmodern} % Default LaTeX modern font
-
-% Page Layout
+\usepackage{lmodern}
+\usepackage{xcolor}
 \usepackage{geometry}
 \geometry{left=1in,right=1in,top=1in,bottom=1in}
-
-% Optional: No paragraph indentation and add spacing between paragraphs
 \usepackage{parskip}
-
-% Links
 \usepackage{hyperref}
-\hypersetup{
-    colorlinks=true,
-    linkcolor=blue,
-    urlcolor=blue
-}
-
-% Elegant Section Formatting
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
 \usepackage{titlesec}
 \titleformat{\section}{\normalfont\large\scshape}{}{0pt}{}[\titlerule]
-
-% No page numbers
 \pagestyle{empty}
+
+\newcommand{\changed}[1]{#1}
+\newcommand{\blackhref}[2]{\href{#1}{\textcolor{black}{#2}}}
 
 \begin{document}
 
-% Name and Contact Information
 \begin{center}
-    {\Large \textsc{Marco Badran}} \\ % Smaller name size
+    {\Large \textsc{Marco Badran}} \\
     \vspace{2mm}
-    \small Postdoc at ETH Z\"urich \\
+    \changed{Postdoctoral researcher at Bocconi University} \\
     \vspace{2mm}
-    \href{mailto:marco.badran@math.ethz.ch}{email} | \href{https://marco-badran.github.io/marco-badran/}{website}\\ 
-   \today
+    \changed{\href{mailto:marco.badran@unibocconi.it}{email} | \href{https://marco-badran.github.io/}{website}}\\
+    \today
 \end{center}
 
 \vspace{10mm}
 
-% Employment
 \section*{Employment}
 \noindent
-\textbf{Postdoc at ETH Z\"urich} \\
-2023 -- ongoing \\
-Mentor: Prof.\ Joaquim Serra.
+\changed{\textbf{Postdoctoral researcher at Bocconi University (BIDSA)} \\
+2026 -- ongoing \\
+Mentor: Prof.\ Alessandro Pigati.}
+
+\vspace{3mm}
+
+\changed{\textbf{Postdoctoral researcher at ETH Z\"urich} \\
+2023 -- 2026 \\
+Mentor: Prof.\ Joaquim Serra.}
+
 \vspace{5mm}
 
-% Education Section
 \section*{Education}
 \noindent
 \textbf{Ph.D. in Mathematics} \\
@@ -67,73 +60,78 @@ Supervisor: Prof. Bernhard Ruf.
 \vspace{3mm}
 
 \textbf{Bachelor in Mathematics} \\
-Università statale di Milano, 2014 -- 2017 
+Università statale di Milano, 2014 -- 2017
 
 \vspace{5mm}
 
-% Basic Research Interests Section
 \section*{Preprints and publications}
 \noindent
 \begin{itemize}
-	\item \emph{Nonlocal free boundary minimal surfaces.} (with S. Dipierro and E. Valdinoci) {\bf arXiv}
-	\item \emph{Stationary $p$-harmonic maps approaching planar singular harmonic maps to the circle.} (with J. Van Schaftingen). {\bf Calc.\ Var.\ PDE.}
-	\item \emph{Harmonic maps to the circle with higher dimensional singular set.} To appear in {\bf Proc.\ London Math.\ Soc.}
-	\item \emph{Solutions of the Ginzburg--Landau equations concentrating on codimension-2 minimal submanifolds.} (with M. del Pino.) {\bf J.\ London Math.\ Soc.}
-	\item \emph{Entire solutions to 4-dimensional Ginzburg--Landau equations and codimension 2 minimal submanifolds.} (with M. del Pino.) {\bf Adv.\ Math.}
+    \item \changed{\emph{Stable solutions in the abelian Higgs model.} \blackhref{https://arxiv.org/abs/2609.11647}{\textbf{arXiv}}.}
+    \item \changed{\emph{A two-dimensional Allen--Cahn theory for interfaces with boundary.} (with M. del Pino and M. A. M. Guaraco) \blackhref{https://arxiv.org/abs/2607.29588}{\textbf{arXiv}}.}
+    \item \changed{\emph{Uniform small energy regularity for fractional geometric problems.} (with G. Cozzi) \blackhref{https://arxiv.org/abs/2605.06128}{\textbf{arXiv}}.}
+    \item \emph{Nonlocal free boundary minimal surfaces.} (with S. Dipierro and E. Valdinoci) \blackhref{https://arxiv.org/abs/2508.00337}{\textbf{arXiv}}.
+    \item \emph{Stationary $p$-harmonic maps approaching planar singular harmonic maps to the circle.} (with J. Van Schaftingen) \blackhref{https://link.springer.com/article/10.1007/s00526-025-03160-w}{\textbf{Calc. Var. PDE}}.
+    \item \changed{\emph{Harmonic maps to the circle with higher dimensional singular set.} \blackhref{https://londmathsoc.onlinelibrary.wiley.com/doi/10.1112/plms.70135}{\textbf{Proc. London Math. Soc}}.}
+    \item \emph{Solutions of the Ginzburg--Landau equations concentrating on codimension-2 minimal submanifolds.} (with M. del Pino) \blackhref{https://londmathsoc.onlinelibrary.wiley.com/doi/10.1112/jlms.12851}{\textbf{J. London Math. Soc}}.
+    \item \emph{Entire solutions to 4-dimensional Ginzburg--Landau equations and codimension 2 minimal submanifolds.} (with M. del Pino) \blackhref{https://www.sciencedirect.com/science/article/pii/S000187082300508X}{\textbf{Adv. Math}}.
 \end{itemize}
 
 \vspace{5mm}
 
-\newpage
-\section*{Invited speaker - seminars}
+\section*{Invited talks and seminars}
 \noindent
 \begin{itemize}
-	\item Analysis seminar, Politecnico di Torino (12.25)
-\item La Cristalera PDE days, Madrid (11.25)
-\item International geometric analysis conference in Milan, Bocconi (06.25)
-\item PDE Seminar, Cambridge (05.25)
-\item Analysis Seminar, SNS Pisa (03.25)
-\item Analysis Seminar, ETH Z\"urich (02.25)
-\item Analysis \& PDE seminar, NUS Singapore (02.24)
-\item Young researchers in PDEs, UAM/ICMAT Madrid (10.23)
-\item Analysis seminar, University of Bath (02.23)
-\item Analysis seminar,  UAM/ICMAT Madrid (01.23)
-\item Geometry seminar, UCL London ({01.23})
-\item Analysis seminar, UniMi Milano ({12.22})
+    \item \changed{Centro De Giorgi seminar, Pisa (07.26)}
+    \item \changed{Regularity Theory for Free Boundary and Geometric Variational Problems VI, Cervia (06.26)}
+    \item \changed{London Analysis and Probability Seminar, King's College London (04.26)}
+    \item Analysis seminar, Politecnico di Torino (12.25)
+    \item La Cristalera PDE days, Madrid (11.25)
+    \item International geometric analysis conference in Milan, Bocconi (06.25)
+    \item PDE Seminar, Cambridge (05.25)
+    \item Analysis Seminar, SNS Pisa (03.25)
+    \item Analysis Seminar, ETH Z\"urich (02.25)
+    \item Analysis \& PDE seminar, NUS Singapore (02.24)
+    \item Young researchers in PDEs, UAM/ICMAT Madrid (10.23)
+    \item Analysis seminar, University of Bath (02.23)
+    \item Analysis seminar, UAM/ICMAT Madrid (01.23)
+    \item Geometry seminar, UCL London (01.23)
+    \item Analysis seminar, UniMi Milano (12.22)
 \end{itemize}
+
 \vspace{5mm}
 
-%Teaching
 \section*{Teaching}
 \noindent
 \begin{itemize}
-	\item Co-lecturer of \emph{Geometric Heat Flows}, D-MATH (Fall 25)
-\item Organiser for \emph{Mathematik I}, D-USYS ETHZ (Fall 2025)
-\item Organiser for \emph{Partial Differential Equations}, D-MATH ETHZ (Spring 2025)
-\item Organiser for \emph{Analysis I}, D-INFK ETHZ (Spring 2025)
-\item Lecturer for \emph{Nonlinear Analysis and Perturbation Methods}, D-MATH ETHZ. (Fall 2024)
-\item Organiser for \emph{Analysis IV}, D-MATH ETHZ. (Spring 2024)
-\item Graduate Teaching Assistant at University of Bath (several courses, 2019 -- 2023)
+    \item Co-lecturer of \emph{Geometric Heat Flows}, D-MATH (Fall 2025)
+    \item Organiser for \emph{Mathematik I}, D-USYS ETHZ (Fall 2025)
+    \item Organiser for \emph{Partial Differential Equations}, D-MATH ETHZ (Spring 2025)
+    \item Organiser for \emph{Analysis I}, D-INFK ETHZ (Spring 2025)
+    \item Lecturer for \emph{Nonlinear Analysis and Perturbation Methods}, D-MATH ETHZ (Fall 2024)
+    \item Organiser for \emph{Analysis IV}, D-MATH ETHZ (Spring 2024)
+    \item Graduate Teaching Assistant at University of Bath (several courses, 2019 -- 2023)
 \end{itemize}
+
 \vspace{5mm}
 
-%Refereeing service
 \section*{Other activities}
 \noindent
 \textbf{Referee for:} Adv.\ Differential Equations, Ars Inven.\ Analytica, Proc.\ London Math.\ Soc., Discrete Contin.\ Dyn.\ Sys., Journal of Differential Equations\\
- 
+
 \noindent
-\textbf{Supervision:} 
+\textbf{Supervision:}
 \begin{itemize}
-\item Andr\'e Dabrowski (Master Thesis, joint with J. Serra, ETH Zürich, 2025)
-\item Martin Gonzalez Yu (Semester paper -- ETH Z\"urich, 2025)
-	\item Derk Steffens (Master Thesis, joint with J. Serra, ETH Zürich, 2025)
-\item Marco De Rivo (Bachelor thesis -- ETH Z\"urich, 2025)
-\item Derk Steffens (Reading Course -- ETH Z\"urich, 2025)
-\item Luana Jost (Semester paper -- ETH Z\"urich, 2025)
-\item Lennard Trautmann (Semester paper -- ETH Z\"urich, 2025)
-\item Matteo Gatti (Bachelor thesis -- ETH Z\"urich, 2025)
+    \item Andr\'e Dabrowski (Master Thesis, joint with J. Serra, ETH Z\"urich, 2025)
+    \item Martin Gonzalez Yu (Semester paper -- ETH Z\"urich, 2025)
+    \item Derk Steffens (Master Thesis, joint with J. Serra, ETH Z\"urich, 2025)
+    \item Marco De Rivo (Bachelor thesis -- ETH Z\"urich, 2025)
+    \item Derk Steffens (Reading Course -- ETH Z\"urich, 2025)
+    \item Luana Jost (Semester paper -- ETH Z\"urich, 2025)
+    \item Lennard Trautmann (Semester paper -- ETH Z\"urich, 2025)
+    \item Matteo Gatti (Bachelor thesis -- ETH Z\"urich, 2025)
 \end{itemize}
+
 \vspace{5mm}
 
 \end{document}
